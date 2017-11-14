@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+            <p> </p>
+            <form action="" method="post"> {% csrf_token %}
+                {{form.as_p}}
+                <div>
+                    <button type = "submit" class="btn btn-primary">Відправити</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
