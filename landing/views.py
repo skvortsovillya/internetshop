@@ -4,11 +4,9 @@ from .forms import SubscriberForm
 
 
 def landing(request):
-    something = 5
     form = SubscriberForm(request.POST or None)
     if request.method == "POST" and form.is_valid():
         print(form.cleaned_data)
         saved_form = form.save()
-
 
     return render(request, 'landing/landing.html', locals())
