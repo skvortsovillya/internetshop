@@ -12,6 +12,6 @@ class SubscriberForm(forms.ModelForm):
         exclude = [""]
         fields = ("email", "name")
         widgets = {
-            'email': TextInput(attrs={'style' : 'padding-left:3px;', 'placeholder': 'Email'}),
-            'name': TextInput(attrs={'style' : 'padding-left:3px;','placeholder': 'Name'}),
+            'email': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Email'}),
+            'name': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Name'}),
         }
