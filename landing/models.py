@@ -11,8 +11,8 @@ class Subscriber(models.Model):
         return "користувач: {} | ім'я: {}".format(self.email, self.name)
 
     class Meta:
-        verbose_name = "My Subscriber"
-        verbose_name_plural = "A lot of subscribers"
+        verbose_name = "Коричтувач"
+        verbose_name_plural = "Коричтувачі"
 
 
 
