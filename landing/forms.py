@@ -1,6 +1,6 @@
 from django import forms
 from .models import *
-from django.forms import Textarea, TextInput
+#from django.forms import Textarea, TextInput
 
 
 class SubscriberForm(forms.ModelForm):
@@ -10,8 +10,8 @@ class SubscriberForm(forms.ModelForm):
     class Meta:
         model = Subscriber
         exclude = [""]
-        fields = ("email", "name")
-        widgets = {
-            'email': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Email'}),
-            'name': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Name'}),
-        }
+        #fields = ("email", "name")
+        #widgets = {
+         #   'email': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Email'}),
+          #  'name': TextInput(attrs={'style': 'padding-left:3px;', 'placeholder': 'Name'}),
+        #}

@@ -15,16 +15,16 @@
         <div class="container top-container">
             <div class="row">
                 <div class="col-lg-8 col -lg-offset-2">
-                    <h2 class="title">Наш магазин скоро відкриється</h2>
-                    <h2 class="title">Залишайте свої дані в формі</h2>
+                    <h1 class="title">Наш магазин скоро відкриється</h1>
+                    <h1 class="title">Залишайте свої дані в формі</h1>
                     <span class="badge badge-primary">Primary</span>
 
                     <form action="" method="post" class="form-inline"> {% csrf_token %}
                            <div class="form-group">
-                               {{ form.email }}
+                               <input type="text" name="{{form.email.name}}" class="form-control" placeholder="Email">
                            </div>
                            <div class="form-group">
-                               {{ form.name }}
+                               <input type="text" name="{{form.name.name}}" class="form-control" placeholder="Name">
                            </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
